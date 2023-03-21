@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <!-- 
+  Remember to map servlet and to create right pairs the name of the <servlet-name> in <servlet> and <servlet-mapping>
+  should be same   
+  
+ 
+  //<servlet>
+  <servlet-name>first</servlet-name>
+  <servlet-class>com.JoyjitServlet2023.Servlets.AddServlet</servlet-class>
+  // this is for specific class and will override the servlet context  this is servlet congif 
+  <init-param>
+  <param-name></param-name>
+  <param-value></param-value>
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>first</servlet-name>
+   <url-pattern>/add</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>second</servlet-name>
+  <servlet-class>com.JoyjitServlet2023.Servlets.SqServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>second</servlet-name>
+   <url-pattern>/sq</url-pattern>
+  
+  </servlet-mapping>
+  
+   //this is servlet context for all servlet a global for all servlet
+  <context-param>
+  <param-name></param-name>
+  <param-value></param-value>
+  </context-param>
+  -->
+  
+</web-app>
